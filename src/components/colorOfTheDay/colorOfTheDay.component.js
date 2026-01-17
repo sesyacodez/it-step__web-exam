@@ -14,7 +14,8 @@ function ColorOfTheDay() {
 
   const handleColorOfTheDay = () => {
     if (colorOfTheDay) {
-      navigate(`/colors/${colorOfTheDay}`);
+      navigate(`/colors/${colorOfTheDay.replace("#", "")}`);
+      window.scrollTo(0, 0);
     }
   };
 
@@ -42,10 +43,9 @@ function ColorOfTheDay() {
             <p className={classes.hexCode}>{colorOfTheDay}</p>
           </div>
           <div className={classes.info}>
-            <h2 className={classes.colorName}>Black Forest</h2>
+            <h2 className={classes.colorName}>Beautiful Color</h2>
             <p className={classes.description}>
-              Intense, nearly black green invokes dense evergreens and midnight
-              mystery, exuding strength and primordial energy.
+              Intense, exuding strength, primordial energy, mystery, and allure.
             </p>
           </div>
         </div>

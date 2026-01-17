@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.generatorPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+
+    .hint {
+      font-size: 14px;
+      color: #333;
+      margin: 0;
+    }
+
+    .saveButton {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border: none;
+      background: transparent;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      cursor: pointer;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  .paletteContainer {
+    display: flex;
+    flex: 1;
+
+    .colorWrapper {
+      display: flex;
+      flex: 1;
+      position: relative;
+
+      .colorBlock {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 40px;
+        position: relative;
+
+        .colorActions {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          align-items: center;
+
+          .actionButton {
+            width: 36px;
+            height: 36px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.2s;
+
+            &:hover {
+              background: rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+
+        .colorInfo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+
+          .hexCode {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+          }
+
+          .colorName {
+            font-size: 14px;
+            font-weight: 400;
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .divider {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        transform: translateX(50%);
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .addButton {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          background: #fff;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #333;
+          transition:
+            transform 0.2s,
+            box-shadow 0.2s;
+
+          &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+}

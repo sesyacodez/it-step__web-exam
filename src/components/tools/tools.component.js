@@ -3,10 +3,12 @@ import { useNavigate } from "react-router-dom";
 
 export const Tools = () => {
   const navigate = useNavigate();
-  const handleStartGenerator = () => navigate("/generator");
-
+  const handleStartGenerator = () => {
+    navigate("/generator");
+    window.scrollTo(0, 0);
+  };
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="tools-section">
       <h2 className={classes.title}>OUR TOOLS, LOVED BY MILLIONS</h2>
       <div className={classes.toolList}>
         <div

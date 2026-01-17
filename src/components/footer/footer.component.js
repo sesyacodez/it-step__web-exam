@@ -3,7 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 export const Footer = () => {
   const navigate = useNavigate();
-  const handleStartGenerator = () => navigate("/generator");
+  const handleStartGenerator = () => {
+    navigate("/generator");
+    window.scrollTo(0, 0);
+  };
 
   return (
     <footer className={classes.container}>

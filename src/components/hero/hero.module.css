@@ -33,7 +33,7 @@
         img {
           height: 70px;
           position: absolute;
-          bottom: 10px;
+          bottom: 0;
           right: -300px;
           rotate: -15deg;
         }

@@ -5,7 +5,10 @@ import { ColorGradient } from "../colorGradient/ColorGradient";
 
 export const Hero = () => {
   const navigate = useNavigate();
-  const handleStartGenerator = () => navigate("/generator");
+  const handleStartGenerator = () => {
+    navigate("/generator");
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className={classes.container}>
