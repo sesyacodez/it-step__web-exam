@@ -4,6 +4,7 @@ import { Header } from "../components/header/header.component.js";
 import { HoverColorLetters } from "../components/hoverColorLetters/hoverColorLetters.js";
 import { getRandomPalette } from "../shared/colorPaletteGenerator";
 import { Hero } from "../components/hero/hero.component.js";
+import { Companies } from "../components/companies/companies.component.js";
 
 function HomePage() {
   const [colorOfTheDay, setColorOfTheDay] = useState("");
@@ -25,6 +26,7 @@ function HomePage() {
     <div className="App">
       <Header />
       <Hero />
+      <Companies />
       <div>
         <button onClick={handleStartGenerator}>Start Generator</button>
       </div>
