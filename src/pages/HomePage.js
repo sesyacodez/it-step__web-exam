@@ -6,6 +6,7 @@ import { Companies } from "../components/companies/companies.component.js";
 import { ColorOfTheDay } from "../components/colorOfTheDay/colorOfTheDay.component.js";
 import { Tools } from "../components/tools/tools.component.js";
 import { Resources } from "../components/resources/resources.component.js";
+import { Apps } from "../components/apps/apps.component.js";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -17,6 +18,7 @@ function HomePage() {
       <ColorOfTheDay />
       <Tools />
       <Resources />
+      <Apps />
       <HoverColorLetters
         text="Aliquip non consectetur consectetur do duis pariatur duis laborum."
         defaultColor="black"

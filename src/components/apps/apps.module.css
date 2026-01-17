@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #333;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+  }
+  .appList {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    .appItem {
+      flex: 1 1 0;
+      min-width: 0;
+      position: relative;
+      padding: 32px;
+      border-radius: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid #ececec;
+      font-family: "Inter", sans-serif;
+      text-align: center;
+      &::after {
+        content: "↗";
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+        color: #333;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+      }
+
+      &:hover {
+        border: 2px solid #acacac;
+        transform: scale(1.02);
+        &::after {
+          opacity: 1;
+        }
+      }
+
+      .appTitle {
+        font-size: 32px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 12px;
+        padding: 0;
+      }
+    }
+  }
+}
