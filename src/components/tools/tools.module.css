@@ -1,0 +1,351 @@
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Inter", sans-serif;
+
+  .title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 40px;
+  }
+
+  .toolList {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.toolItem {
+  padding: 32px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-4px) scale(1.03);
+    transition: all 0.2s ease;
+  }
+}
+
+.generator {
+  background-color: #cffafe;
+
+  .toolTitle {
+    color: #0891b2;
+  }
+
+  .toolDescription {
+    color: #0891b2;
+  }
+
+  .toolButton {
+    color: #0891b2;
+  }
+
+  &:hover {
+    background-color: #0891b2;
+
+    .toolTitle,
+    .toolDescription,
+    .toolButton {
+      color: white;
+    }
+
+    .buttonContainer p {
+      color: white;
+    }
+  }
+}
+
+.explore {
+  background-color: #dbeafe;
+
+  .toolTitle {
+    color: #2563eb;
+  }
+
+  .toolDescription {
+    color: #2563eb;
+  }
+
+  .toolButton {
+    color: #2563eb;
+  }
+
+  &:hover {
+    background-color: #2563eb;
+
+    .toolTitle,
+    .toolDescription,
+    .toolButton {
+      color: white;
+    }
+
+    .buttonContainer p {
+      color: white;
+    }
+  }
+}
+
+.imagePicker {
+  background-color: #f3e8ff;
+
+  .toolTitle {
+    color: #9333ea;
+  }
+
+  .toolDescription {
+    color: #9333ea;
+  }
+
+  .toolButton {
+    color: #9333ea;
+  }
+
+  &:hover {
+    background-color: #9333ea;
+
+    .toolTitle,
+    .toolDescription,
+    .toolButton {
+      color: white;
+    }
+
+    .buttonContainer p {
+      color: white;
+    }
+  }
+}
+
+.contrastChecker {
+  background-color: #fce7f3;
+
+  .toolTitle {
+    color: #db2777;
+  }
+
+  .toolDescription {
+    color: #db2777;
+  }
+
+  .toolButton {
+    color: #db2777;
+  }
+
+  &:hover {
+    background-color: #db2777;
+
+    .toolTitle,
+    .toolDescription,
+    .toolButton {
+      color: white;
+    }
+
+    .buttonContainer p {
+      color: white;
+    }
+  }
+}
+
+.visualizer {
+  background-color: #fee2f2;
+
+  .toolTitle {
+    color: #dc2626;
+  }
+
+  .toolDescription {
+    color: #dc2626;
+  }
+
+  .toolButton {
+    color: #dc2626;
+  }
+
+  &:hover {
+    background-color: #dc2626;
+
+    .toolTitle,
+    .toolDescription,
+    .toolButton {
+      color: white;
+    }
+
+    .buttonContainer p {
+      color: white;
+    }
+  }
+}
+
+.colorPicker {
+  background-color: #ffedd5;
+
+  .toolTitle {
+    color: #ea580c;
+  }
+
+  .toolDescription {
+    color: #ea580c;
+  }
+
+  .toolButton {
+    color: #ea580c;
+  }
+
+  &:hover {
+    background-color: #ea580c;
+
+    .toolTitle,
+    .toolDescription,
+    .toolButton {
+      color: white;
+    }
+
+    .buttonContainer p {
+      color: white;
+    }
+  }
+}
+
+.tailwind {
+  background-color: #ffe9c3;
+
+  .toolTitle {
+    color: #ca8a04;
+  }
+
+  .toolDescription {
+    color: #ca8a04;
+  }
+
+  .toolButton {
+    color: #ca8a04;
+  }
+
+  &:hover {
+    background-color: #ca8a04;
+
+    .toolTitle,
+    .toolDescription,
+    .toolButton {
+      color: white;
+    }
+
+    .buttonContainer p {
+      color: white;
+    }
+  }
+}
+
+.colorBot {
+  background-color: #dcfce7;
+
+  .toolTitle {
+    color: #16a34a;
+  }
+
+  .toolDescription {
+    color: #16a34a;
+  }
+
+  .toolButton {
+    color: #16a34a;
+  }
+
+  &:hover {
+    background-color: #16a34a;
+
+    .toolTitle,
+    .toolDescription,
+    .toolButton {
+      color: white;
+    }
+
+    .buttonContainer p {
+      color: white;
+    }
+  }
+}
+
+.toolTitle {
+  font-size: 55px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 12px;
+  max-width: 60%;
+  padding: 0;
+}
+
+.toolDescription {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+
+  p {
+    margin: 0;
+    font-size: 20px;
+  }
+}
+
+.toolButton {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.generator .buttonContainer p {
+  color: #0891b2;
+}
+
+.explore .buttonContainer p {
+  color: #3b82f6;
+}
+
+.imagePicker .buttonContainer p {
+  color: #a855f7;
+}
+
+.contrastChecker .buttonContainer p {
+  color: #ec4899;
+}
+
+.visualizer .buttonContainer p {
+  color: #f97316;
+}
+
+.colorPicker .buttonContainer p {
+  color: #eab308;
+}
+
+.tailwind .buttonContainer p {
+  color: #eab308;
+}
+
+.colorBot .buttonContainer p {
+  color: #10b981;
+}

@@ -29,13 +29,12 @@ function ColorOfTheDay() {
         export them in multiple formats—effortlessly across web, apps, and
         plugins. Now with AI!
       </div>
-      <div className={classes.card}>
+      <div className={classes.card} onClick={handleColorOfTheDay}>
         <h3 className={classes.title}>COLOR OF THE DAY</h3>
         <div className={classes.content}>
           <div className={classes.colorSection}>
             <div
               className={classes.colorBox}
-              onClick={handleColorOfTheDay}
               style={{
                 backgroundColor: colorOfTheDay,
               }}

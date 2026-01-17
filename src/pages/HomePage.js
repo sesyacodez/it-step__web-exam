@@ -4,18 +4,17 @@ import { HoverColorLetters } from "../components/hoverColorLetters/hoverColorLet
 import { Hero } from "../components/hero/hero.component.js";
 import { Companies } from "../components/companies/companies.component.js";
 import { ColorOfTheDay } from "../components/colorOfTheDay/colorOfTheDay.component.js";
+import { Tools } from "../components/tools/tools.component.js";
 
 function HomePage() {
   const navigate = useNavigate();
-
-  const handleStartGenerator = () => navigate("/generator");
-
   return (
     <div className="App">
       <Header />
       <Hero />
       <Companies />
       <ColorOfTheDay />
+      <Tools />
       <HoverColorLetters
         text="Aliquip non consectetur consectetur do duis pariatur duis laborum."
         defaultColor="black"
