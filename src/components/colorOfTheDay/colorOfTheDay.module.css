@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: "Inter", sans-serif;
+
+  .text {
+    font-size: 26px;
+    line-height: 1.4;
+    color: #000;
+  }
+
+  .card {
+    background-color: #e7e7e7;
+    padding: 32px;
+    border-radius: 12px;
+    min-width: 380px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &::after {
+      content: "↗";
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      color: #333;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover {
+      border: 2px solid #acacac;
+      transform: scale(1.02);
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    .title {
+      font-weight: 400;
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 20px;
+      color: #333;
+      font-family: "Inter", sans-serif;
+      letter-spacing: 1px;
+      margin: 0 0 24px 0;
+    }
+
+    .content {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+
+      .colorSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .colorBox {
+          width: 72px;
+          height: 72px;
+          border-radius: 12px;
+          flex-shrink: 0;
+          cursor: pointer;
+        }
+        .hexCode {
+          font-size: 16px;
+          color: #424242;
+          margin: 0 0 12px 0;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+
+      .info {
+        .colorName {
+          font-size: 23px;
+          font-weight: 400;
+          color: #000;
+          margin: 0 0 4px 0;
+        }
+
+        .description {
+          font-size: 13px;
+          color: #666;
+          line-height: 1.6;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,45 +1,21 @@
-import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "../components/header/header.component.js";
 import { HoverColorLetters } from "../components/hoverColorLetters/hoverColorLetters.js";
-import { getRandomPalette } from "../shared/colorPaletteGenerator";
 import { Hero } from "../components/hero/hero.component.js";
 import { Companies } from "../components/companies/companies.component.js";
+import { ColorOfTheDay } from "../components/colorOfTheDay/colorOfTheDay.component.js";
 
 function HomePage() {
-  const [colorOfTheDay, setColorOfTheDay] = useState("");
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const randomColors = getRandomPalette(1);
-    setColorOfTheDay(randomColors[0]);
-  }, []);
-
   const handleStartGenerator = () => navigate("/generator");
-  const handleColorOfTheDay = () => {
-    if (colorOfTheDay) {
-      navigate(`/colors/${colorOfTheDay}`);
-    }
-  };
 
   return (
     <div className="App">
       <Header />
       <Hero />
       <Companies />
-      <div>
-        <button onClick={handleStartGenerator}>Start Generator</button>
-      </div>
-      <div
-        onClick={handleColorOfTheDay}
-        style={{
-          cursor: "pointer",
-          padding: "10px",
-          backgroundColor: colorOfTheDay,
-        }}
-      >
-        Color of the Day: {colorOfTheDay}
-      </div>
+      <ColorOfTheDay />
       <HoverColorLetters
         text="Aliquip non consectetur consectetur do duis pariatur duis laborum."
         defaultColor="black"
