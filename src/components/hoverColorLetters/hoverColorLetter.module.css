@@ -1,12 +1,12 @@
 .letter {
-    /* --default-color: black; */
-    color: var(--default-color);
+  /* --default-color: black; */
+  color: var(--default-color);
 }
 
 .letter.anim_color {
-    animation-name: letter-color;
-    animation-duration: 3s;
-    animation-fill-mode: both;
+  animation-name: letter-color;
+  animation-duration: 3s;
+  animation-fill-mode: both;
 }
 
 /* 
@@ -16,14 +16,13 @@
     100% default-color
 */
 @keyframes letter-color {
+  0%,
+  100% {
+    color: var(--default-color);
+  }
 
-    0%,
-    100% {
-        color: var(--default-color)
-    }
-
-    15%,
-    85% {
-        color: var(--color)
-    }
+  15%,
+  85% {
+    color: var(--color);
+  }
 }

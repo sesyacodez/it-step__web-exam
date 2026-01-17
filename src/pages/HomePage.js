@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Header } from "../components/header/header.component.js";
 import { HoverColorLetters } from "../components/hoverColorLetters/hoverColorLetters.js";
 import { getRandomPalette } from "../shared/colorPaletteGenerator";
+import { Hero } from "../components/hero/hero.component.js";
 
 function HomePage() {
   const [colorOfTheDay, setColorOfTheDay] = useState("");
@@ -23,6 +24,7 @@ function HomePage() {
   return (
     <div className="App">
       <Header />
+      <Hero />
       <div>
         <button onClick={handleStartGenerator}>Start Generator</button>
       </div>

@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  .textContainer {
+    flex: 1;
+    .titles {
+      margin: 50px 0;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      .title {
+        position: relative;
+        font-size: 48px;
+        font-family: "Inter", sans-serif;
+        padding-bottom: 0;
+        font-weight: 800;
+        padding: 0;
+        cursor: default;
+        display: inline-block;
+        img {
+          height: 70px;
+          position: absolute;
+          bottom: 25px;
+          right: -300px;
+          rotate: -15deg;
+        }
+      }
+      .subtitle {
+        font-size: 12px;
+        font-weight: 200;
+        color: #555;
+        font-family: "Inter", sans-serif;
+        max-width: 500px;
+      }
+    }
+    .buttonContainer {
+      display: flex;
+      gap: 15px;
+
+      button {
+        padding: 12px 30px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 400;
+        font-family: "Inter", sans-serif;
+      }
+
+      button:first-child {
+        background-color: #2563eb;
+        color: white;
+        &:hover {
+          background-color: #1a44a0;
+        }
+      }
+
+      button:last-child {
+        background-color: #e7e7e7;
+        color: #1a1a1a;
+        &:hover {
+          background-color: #d3d3d3;
+        }
+      }
+    }
+  }
+  .gifContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    .PaletteGif {
+      width: 80%;
+      height: 300px;
+      border-radius: 20px;
+    }
+  }
+}
