@@ -8,6 +8,7 @@ import { Tools } from "../components/tools/tools.component.js";
 import { Resources } from "../components/resources/resources.component.js";
 import { Apps } from "../components/apps/apps.component.js";
 import { Coolorful } from "../components/coolorful/coolorful.component.js";
+import { Footer } from "../components/footer/footer.component.js";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -21,11 +22,7 @@ function HomePage() {
       <Resources />
       <Apps />
       <Coolorful />
-      <HoverColorLetters
-        text="Aliquip non consectetur consectetur do duis pariatur duis laborum."
-        defaultColor="black"
-        colors={["#6369d1", "#60e1e0", "#d8d2e1", "#b88e8d", "#34435e"]}
-      />
+      <Footer />
     </div>
   );
 }

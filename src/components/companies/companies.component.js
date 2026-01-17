@@ -30,21 +30,25 @@ const svgLinks = [
 ];
 
 export const Companies = () => {
+  const scrollingLogos = [...svgLinks, ...svgLinks];
+
   return (
     <div className={classes.container}>
       <div className={classes.title}>
         TRUSTED BY 8+ MILLION CREATIVE MINDS AND TOP COMPANIES
       </div>
 
-      <div className={classes.logos}>
-        {svgLinks.map((link, index) => (
-          <img
-            key={index}
-            src={link}
-            alt={`Company logo ${index + 1}`}
-            className={classes.logo}
-          />
-        ))}
+      <div className={classes.marquee}>
+        <div className={classes.track}>
+          {scrollingLogos.map((link, index) => (
+            <img
+              key={`${link}-${index}`}
+              src={link}
+              alt={`Company logo ${index + 1}`}
+              className={classes.logo}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
