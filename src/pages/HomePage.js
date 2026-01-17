@@ -7,6 +7,7 @@ import { ColorOfTheDay } from "../components/colorOfTheDay/colorOfTheDay.compone
 import { Tools } from "../components/tools/tools.component.js";
 import { Resources } from "../components/resources/resources.component.js";
 import { Apps } from "../components/apps/apps.component.js";
+import { Coolorful } from "../components/coolorful/coolorful.component.js";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -19,6 +20,7 @@ function HomePage() {
       <Tools />
       <Resources />
       <Apps />
+      <Coolorful />
       <HoverColorLetters
         text="Aliquip non consectetur consectetur do duis pariatur duis laborum."
         defaultColor="black"

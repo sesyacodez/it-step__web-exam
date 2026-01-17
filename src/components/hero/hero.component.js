@@ -13,6 +13,7 @@ export const Hero = () => {
         <div className={classes.titles}>
           <div className={classes.title}>
             <HoverColorLetters
+              className={classes.heroTitle}
               text="The super fast color palettes generator!"
               defaultColor="black"
               colors={[

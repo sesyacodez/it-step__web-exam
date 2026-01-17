@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  max-width: 1500px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  padding: 0 20px;
+  width: 100%;
+  font-size: 150px;
+  font-weight: 700;
+  cursor: default;
+}

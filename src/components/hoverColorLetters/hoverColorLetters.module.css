@@ -1,27 +1,24 @@
 .container {
-    width: 800px;
-    height: 400px;
-    font-size: 110px;
-    line-height: 110px;
-    letter-spacing: 0.1px;
+  width: 100%;
+  letter-spacing: 0.1px;
 }
 
 .letter.anim_color {
-    animation-name: letter-color;
-    animation-duration: 3s;
-    animation-fill-mode: both;
+  animation-name: letter-color;
+  animation-duration: 3s;
+  animation-fill-mode: both;
 }
 
 @keyframes letter-color {
+  0%,
+  100% {
+    color: var(--default-color);
+  }
 
-    0%,
-    100% {
-        color: var(--default-color)
-    }
-
-    15%, 85% {
-        color: var(--color)
-    }
+  15%,
+  85% {
+    color: var(--color);
+  }
 }
 
 /* 

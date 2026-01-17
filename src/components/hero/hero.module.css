@@ -16,17 +16,24 @@
       justify-content: center;
       .title {
         position: relative;
-        font-size: 48px;
         font-family: "Inter", sans-serif;
         padding-bottom: 0;
         font-weight: 800;
-        padding: 0;
+        padding-bottom: 40px;
         cursor: default;
         display: inline-block;
+
+        .heroTitle {
+          font-size: 110px;
+          line-height: 110px;
+          width: 800px;
+          display: block;
+        }
+
         img {
           height: 70px;
           position: absolute;
-          bottom: 25px;
+          bottom: 10px;
           right: -300px;
           rotate: -15deg;
         }
