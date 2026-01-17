@@ -7,7 +7,7 @@ export const Tools = () => {
 
   return (
     <div className={classes.container}>
-      <h2 className={classes.title}>Tools</h2>
+      <h2 className={classes.title}>OUR TOOLS, LOVED BY MILLIONS</h2>
       <div className={classes.toolList}>
         <div
           className={`${classes.toolItem} ${classes.generator}`}

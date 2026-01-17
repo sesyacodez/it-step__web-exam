@@ -15,7 +15,7 @@
   }
 
   .card {
-    background-color: #e7e7e7;
+    background-color: #ececec;
     padding: 32px;
     border-radius: 12px;
     min-width: 380px;
@@ -72,7 +72,7 @@
         .hexCode {
           font-size: 16px;
           color: #424242;
-          margin: 0 0 12px 0;
+          margin: 7px 0 12px 0;
           font-weight: 400;
           text-align: center;
         }

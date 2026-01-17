@@ -26,7 +26,7 @@ function ColorOfTheDay() {
         generate beautiful palettes by hitting the spacebar, or explore millions
         of popular ones. Extract colors from images, check accessibility, and
         preview them on real designs. Organize your palettes into projects and
-        export them in multiple formats—effortlessly across web, apps, and
+        export them in multiple formats — effortlessly across web, apps, and
         plugins. Now with AI!
       </div>
       <div className={classes.card} onClick={handleColorOfTheDay}>

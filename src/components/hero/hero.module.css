@@ -62,7 +62,7 @@
       }
 
       button:last-child {
-        background-color: #e7e7e7;
+        background-color: #ececec;
         color: #1a1a1a;
         &:hover {
           background-color: #d3d3d3;
